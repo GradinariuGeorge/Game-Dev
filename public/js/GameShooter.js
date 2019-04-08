@@ -1,10 +1,13 @@
 class GameShooter extends Phaser.Scene {
-
+    constructor(){
+        super({key:'GameShooter'})
+    }
 
     preload() {
         this.load.atlas('nik', 'assets/sprites.png', 'assets/sprites.json');
         this.load.image('helmet', 'assets/helmet.png');
         this.load.image('earth', 'assets/scorched_earth.png');
+        this.load.image('crater','assets/crater.jpg')
     }
 
     create() {
@@ -13,6 +16,8 @@ class GameShooter extends Phaser.Scene {
         this.refreshRate = 5;
         this.land = this.add.tileSprite(0, 0, 5000, 5000, 'earth');
         this.scoreText = this.add.text(16 , 16, '', { fontSize: '42px', fill: '#FF0000' });
+        this.craters=[]
+        this.speed=5;
         this.anims.create({
             key: 'walk_down',
             repeate: -1,
@@ -136,23 +141,23 @@ class GameShooter extends Phaser.Scene {
         if (this.nik) {
 
             if (this.cursors.left.isDown) {
-                this.nik.x--;
+                this.nik.x-=this.speed;
                 this.nik.play('walk_left', true)
                 this.nik.movement = "walk_left"
             } else if (this.cursors.right.isDown) {
-                this.nik.x++;
+                this.nik.x+=this.speed;
                 this.nik.play('walk_right', true)
                 this.nik.movement = "walk_right"
 
             }
             if (this.cursors.up.isDown) {
                 this.nik.play('walk_up', true)
-                this.nik.y--;
+                this.nik.y-=this.speed;
                 this.nik.movement = "walk_up"
 
             } else if (this.cursors.down.isDown) {
                 this.nik.play('walk_down', true)
-                this.nik.y++;
+                this.nik.y+=this.speed;
                 this.nik.movement = "walk_down"
 
             }

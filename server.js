@@ -9,11 +9,21 @@ var helmet = {
     y: Math.floor(Math.random() * 900) + 50
 };
 
+let craters={}
+
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/index.html');
 });
+
+for(let i=0;i<=20;i++){
+    let crater={
+        x: Math.floor(Math.random() * 1500) + 50,
+        y: Math.floor(Math.random() * 900) + 50
+    }
+    craters[i]=crater;
+}
 
 io.on('connection', function (socket) {
     console.log('a user connected: ', socket.id);
@@ -23,10 +33,13 @@ io.on('connection', function (socket) {
         y: Math.floor(Math.random() * 500) + 50,
         playerId: socket.id,
         movementDirection:'',
-        currentScore:0
+        currentScore:0,
+        craters:[]
     };
     // send the players object to the new player
     socket.emit('currentPlayers', players);
+
+    socket.emit('cratersCreated',craters)
     // send the star object to the new player
     socket.emit('helmetLocation', helmet);
     // send the current scores
