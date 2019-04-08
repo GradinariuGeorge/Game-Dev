@@ -1,0 +1,90 @@
+{
+"frames": {
+	"niks_01.png": {
+		"frame": {"x":0, "y":45, "w":25, "h":44},
+		"spriteSourceSize": {"x":0,"y":0,"w":25,"h":44},
+		"sourceSize": {"w":25,"h":44}
+	},
+	"niks_02.png": {
+		"frame": {"x":74, "y":44, "w":23, "h":43},
+		"spriteSourceSize": {"x":0,"y":0,"w":23,"h":43},
+		"sourceSize": {"w":23,"h":43}
+	},
+	"niks_03.png": {
+		"frame": {"x":0, "y":45, "w":25, "h":44},
+		"spriteSourceSize": {"x":0,"y":0,"w":25,"h":44},
+		"sourceSize": {"w":25,"h":44}
+	},
+	"niks_04.png": {
+		"frame": {"x":74, "y":0, "w":23, "h":43},
+		"spriteSourceSize": {"x":0,"y":0,"w":23,"h":43},
+		"sourceSize": {"w":23,"h":43}
+	},
+	"niks_05.png": {
+		"frame": {"x":98, "y":0, "w":20, "h":44},
+		"spriteSourceSize": {"x":0,"y":0,"w":20,"h":44},
+		"sourceSize": {"w":20,"h":44}
+	},
+	"niks_06.png": {
+		"frame": {"x":50, "y":88, "w":23, "h":43},
+		"spriteSourceSize": {"x":0,"y":0,"w":23,"h":43},
+		"sourceSize": {"w":23,"h":43}
+	},
+	"niks_07.png": {
+		"frame": {"x":74, "y":88, "w":20, "h":44},
+		"spriteSourceSize": {"x":0,"y":0,"w":20,"h":44},
+		"sourceSize": {"w":20,"h":44}
+	},
+	"niks_08.png": {
+		"frame": {"x":50, "y":44, "w":23, "h":43},
+		"spriteSourceSize": {"x":0,"y":0,"w":23,"h":43},
+		"sourceSize": {"w":23,"h":43}
+	},
+	"niks_09.png": {
+		"frame": {"x":95, "y":88, "w":20, "h":44},
+		"spriteSourceSize": {"x":0,"y":0,"w":20,"h":44},
+		"sourceSize": {"w":20,"h":44}
+	},
+	"niks_10.png": {
+		"frame": {"x":26, "y":88, "w":23, "h":43},
+		"spriteSourceSize": {"x":0,"y":0,"w":23,"h":43},
+		"sourceSize": {"w":23,"h":43}
+	},
+	"niks_11.png": {
+		"frame": {"x":95, "y":88, "w":20, "h":44},
+		"spriteSourceSize": {"x":0,"y":0,"w":20,"h":44},
+		"sourceSize": {"w":20,"h":44}
+	},
+	"niks_12.png": {
+		"frame": {"x":50, "y":0, "w":23, "h":43},
+		"spriteSourceSize": {"x":0,"y":0,"w":23,"h":43},
+		"sourceSize": {"w":23,"h":43}
+	},
+	"niks_13.png": {
+		"frame": {"x":0, "y":0, "w":25, "h":44},
+		"spriteSourceSize": {"x":0,"y":0,"w":25,"h":44},
+		"sourceSize": {"w":25,"h":44}
+	},
+	"niks_14.png": {
+		"frame": {"x":26, "y":0, "w":23, "h":43},
+		"spriteSourceSize": {"x":0,"y":0,"w":23,"h":43},
+		"sourceSize": {"w":23,"h":43}
+	},
+	"niks_15.png": {
+		"frame": {"x":0, "y":0, "w":25, "h":44},
+		"spriteSourceSize": {"x":0,"y":0,"w":25,"h":44},
+		"sourceSize": {"w":25,"h":44}
+	},
+	"niks_16.png": {
+		"frame": {"x":26, "y":44, "w":23, "h":43},
+		"spriteSourceSize": {"x":0,"y":0,"w":23,"h":43},
+		"sourceSize": {"w":23,"h":43}
+	}
+
+},
+"meta": {
+	"image": "sprites.png",
+	"size": {"w": 119, "h": 133},
+	"scale": "1"
+}
+}
